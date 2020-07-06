@@ -1,10 +1,16 @@
 "use strict";
 
-const input = prompt('Введите число');
+let input = Number( prompt('Введите число меньше нуля'));
 
-let i = 0;
+if (input < 0) {
+    let i = input;
 
-while (i < input ) {
-    alert('#');
-    i += 1;
+    while (input < 0) {
+        input += 1;
+        i = (`${i} ${input}`);
+    }
+
+    alert(i);
+} else {
+    alert('Неверное число');
 }
