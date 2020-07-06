@@ -1,16 +1,26 @@
 "use strict";
 
-let input = Number( prompt('Введите число меньше нуля'));
+const number= Number( prompt('Введите число'));
 
-if (input < 0) {
-    let i = input;
+const extent = Number( prompt('Введите в какую степень ее возвести'));
 
-    while (input < 0) {
-        input += 1;
-        i = (`${i} ${input}`);
+let i = 0;
+
+let result = 1;
+
+if (extent >= 0) {
+
+    while (i < extent) {
+        i += 1;
+        result  *= number  ;
     }
 
-    alert(i);
+    alert(result);
 } else {
-    alert('Неверное число');
+
+    while (i > extent) {
+        i -= 1;
+        result  /= number  ;
+    }
+    alert(result);
 }
