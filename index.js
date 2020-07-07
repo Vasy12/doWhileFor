@@ -1,10 +1,11 @@
 "use strict";
 
-let answer;
-
+let number = 1000;
+let extent = 0;
 do{
-    answer = Number(prompt('Скольно будет 2 + 2 * 2 ?'))
-} while (answer !== 6){
-    alert('Правильно!!!')
+    number /= 2;
+    extent += 1;
+} while (number > 50){
+    alert(`Число после делений ${number}; На 2 делили ${extent} раз`)
 }
 
