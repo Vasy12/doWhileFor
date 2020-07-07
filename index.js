@@ -1,16 +1,10 @@
 "use strict";
 
-const number= Number( prompt('Введите число'));
+let answer;
 
-let i = 0;
-
-let factorial = 1;
-
-while (i < number){
-
-    i +=1;
-
-    factorial *= i;
+do{
+    answer = Number(prompt('Скольно будет 2 + 2 * 2 ?'))
+} while (answer !== 6){
+    alert('Правильно!!!')
 }
 
-alert(factorial);
